@@ -1,0 +1,2 @@
+
+export NLTK_DATA="/home/azureuser/mnt/2tbstorage/h2ogpt/instalation/nltk_data"
