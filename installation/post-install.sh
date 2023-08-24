@@ -10,6 +10,7 @@ echo "export LD_LIBRARY_PATH=\$LD_LIBRARY_PATH:$(pwd)/cuda_home/lib64/ " >> ./so
 echo "export CUDA_HOME=$(pwd)/cuda_home" >> ./source-profile
 echo "export HF_HOME=$(pwd)/hf_home" >> ./source-profile
 echo "export USER_DATA_PATH=$(pwd)/user_data" >> ./source-profile
+echo "export CUDA_HOME=$CONDA_PREFIX" >> ./source-profile
 echo "# - post install add end - #" >> ./source-profile 
 
 
@@ -39,12 +40,14 @@ sudo apt-get install -y libmagic-dev poppler-utils tesseract-ocr libtesseract-de
 source ./source-profile
 
 python -m nltk.downloader all
-# conda install cudatoolkit=11.7 -c conda-forge -y
- 
+conda install cudatoolkit=11.7 -c conda-forge -y
 source ./source-profile
 
 # cd ..
-testCommand="python generate.py --base_model=h2oai/h2ogpt-4096-llama2-13b-chat --load_8bit=True  --score_model=None --langchain_mode='UserData' --user_path=$USER_DATA_PATH"
+# testCommand="python generate.py --base_model=h2oai/h2ogpt-4096-llama2-13b-chat --load_8bit=True  --score_model=None --langchain_mode='UserData' --user_path=$USER_DATA_PATH"
+testCommand="python generate.py --base_model='llama' --prompt_type=llama2 --score_model=None --langchain_mode='UserData' --user_path=$USER_DATA_PATH --max_seq_len=4056"
+ 
+
 
 echo "Install done!"
 echo "Go back to the root folder then, Try to run:"
