@@ -1,2 +1,14 @@
-
-export NLTK_DATA="/home/azureuser/mnt/2tbstorage/h2ogpt/instalation/nltk_data"
+# export MINICINDA3_INSTALLATION_PATH=/media/azureuser/655ec2d8-e0be-45e5-8de5-699debc42059/h2ogpt/installation/miniconda3
+# export NLTK_DATA=/media/azureuser/655ec2d8-e0be-45e5-8de5-699debc42059/h2ogpt/installation/nltk_data
+# export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/media/azureuser/655ec2d8-e0be-45e5-8de5-699debc42059/h2ogpt/installation/cuda_home/lib64/
+# export CUDA_HOME=/media/azureuser/655ec2d8-e0be-45e5-8de5-699debc42059/h2ogpt/installation/cuda_home
+# export HF_HOME=/media/azureuser/655ec2d8-e0be-45e5-8de5-699debc42059/h2ogpt/installation/hf_home
+# - post install add start - #
+export NLTK_DATA=/media/azureuser/655ec2d8-e0be-45e5-8de5-699debc42059/h2ogpt/installation/nltk_data
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/media/azureuser/655ec2d8-e0be-45e5-8de5-699debc42059/h2ogpt/installation/cuda_home/lib64/ 
+export CUDA_HOME=/media/azureuser/655ec2d8-e0be-45e5-8de5-699debc42059/h2ogpt/installation/cuda_home
+export HF_HOME=/media/azureuser/655ec2d8-e0be-45e5-8de5-699debc42059/h2ogpt/installation/hf_home
+# - post install add end - #
+# - post install add start - #
+export USER_DATA_PATH=/media/azureuser/655ec2d8-e0be-45e5-8de5-699debc42059/h2ogpt/installation/user_data
+# - post install add end - #
