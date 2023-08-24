@@ -47,3 +47,4 @@ hf_home
 *.deb
 ***locks***
 *.lock
+sources_dir/
