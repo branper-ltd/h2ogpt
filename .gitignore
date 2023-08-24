@@ -38,3 +38,12 @@ Dockerfile_deps
 
 # virtual envs
 venv
+*.lock
+
+miniconda3
+nltk_data
+user_data
+hf_home
+*.deb
+***locks***
+*.lock
