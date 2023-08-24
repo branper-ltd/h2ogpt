@@ -1,7 +1,8 @@
 module.exports = {
   apps : [{
     name: 'h2ogpt-cpu-basic',
-    script: "conda activate h2ogpt.env; python generate.py --base_model='llama' --prompt_type=llama2 --score_model=None --langchain_mode='UserData' --user_path=$USER_DATA_PATH --max_seq_len=4056",
+    // script: "conda activate h2ogpt.env; python generate.py --base_model='llama' --prompt_type=llama2 --score_model=None --langchain_mode='UserData' --user_path=$USER_DATA_PATH --max_seq_len=4056",
+    script: "conda deactivate; conda activate h2ogpt.env; source ./installation/source-profile; python generate.py --base_model='llama' --prompt_type=llama2 --score_model=None --langchain_mode='UserData' --max_seq_len=4056 --user_path=$USER_DATA_PATH",
   }],
 
   deploy : {
